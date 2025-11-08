@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer - Unoptimized</title>
+
+  <!-- Multiple font requests (unoptimized) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- No external stylesheet (everything inline) -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+    }
+    header {
+      background-image: url("assets/images/large-banner.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      text-align: center;
+      color: white;
+      padding-top: 180px;
+    }
+    header h1 {
+      font-size: 4em;
+      background-color: rgba(0,0,0,0.4);
+      display: inline-block;
+      padding: 15px 40px;
+      border-radius: 10px;
+    }
+    header p { font-size: 1.4em; margin: 10px 0 20px; }
+    button {
+      background-color: orange;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 5px;
+      color: white;
+    }
+    section {
+      background-color: white;
+      margin: 30px;
+      padding: 50px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    section img { width: 100%; height: auto; margin-bottom: 20px; }
+    section h2 { margin-bottom: 15px; color: #444; }
+    section p { font-size: 1.1em; line-height: 1.8; }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    footer a { color: orange; margin: 0 8px; }
+  </style>
+
+  <!-- Blocking, heavy third-party scripts -->
+  <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+
+  <!-- Simulating analytics delay -->
+  <script>
+    console.log("Loading tracking scripts...");
+    for(let i=0; i<8000000; i++) { } // simulate heavy script
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Explore the World</h1>
+    <p>Unforgettable adventures start here</p>
+    <button onclick="alert('Plan Your Trip Now!')">Start Now</button>
+  </header>
+
+  <section>
+    <h2>Popular Destinations</h2>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Beach">
+    <p>Visit tropical beaches, snow-covered mountains, and ancient cities. Whether you love adventure or relaxation, we bring the best destinations to your fingertips.</p>
+    <p>Discover hidden gems, interact with locals, and create memories that last a lifetime.</p>
+  </section>
+
+
+  <!-- Existing content above -->
+
+<section id="video-section">
+  <h2>Discover the World in Motion</h2>
+  <p>Experience breathtaking destinations through this travel video.</p>
+  <div class="video-container">
+    <!-- Normal YouTube iframe (unoptimized) -->
+    <iframe width="800" height="450"
+      src="https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=0"
+      title="Cinematic Travel Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Existing content below -->
+
+
+  <section>
+    <h2>Our Services</h2>
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Service">
+    <ul style="margin-left:30px;">
+      <li>Flight Booking</li>
+      <li>Hotel Reservations</li>
+      <li>Local Transportation</li>
+      <li>Travel Insurance</li>
+    </ul>
+    <p>We handle every detail so you can enjoy your journey stress-free. Experience premium services at affordable prices.</p>
+  </section>
+
+  <section>
+    <h2>Testimonials</h2>
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Customer">
+    <blockquote>"The best travel experience ever! The team was so helpful and organized. Highly recommended!"</blockquote>
+    <p>- Emily Parker</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel Explorer | Follow us:
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a> |
+      <a href="https://twitter.com">Twitter</a>
+    </p>
+  </footer>
+
+  <!-- Inline and unoptimized JS -->
+  <script>
+    $(document).ready(function(){
+      $("button").hover(function(){
+        $(this).css("background-color", "#555");
+      }, function(){
+        $(this).css("background-color", "orange");
+      });
+    });
+  </script>
+</body>
+</html>
